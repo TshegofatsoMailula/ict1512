@@ -10,8 +10,8 @@ export function createAccount() {
     const cardType = document.getElementById("card_type").value;
     const cardNumber = document.getElementById("card_number").value;
     
-    const maskedID = "*********" + idNumber.slice(-4);
-
+    const maskedID = maskKeepEdges(idNumber);
+    const maskedCardNumber = maskKeepEdges(cardNumber);
     let params = new URLSearchParams();
     params.append("preferred_name", preferred);
     params.append("full_names", fullNames);
@@ -22,7 +22,7 @@ export function createAccount() {
     params.append("shipping", shipping);
     params.append("card_name", cardName);
     params.append("card_type", cardType);
-    params.append("card_number", cardNumber);
+    params.append("card_number", maskedCardNumber);
 
     window.location.replace("orderConfirmation.html?" + params.toString());
 }
@@ -41,7 +41,14 @@ export function displayClientData() {
     document.getElementById("card_type").textContent = params.get("card_type") ?? "";
     document.getElementById("card_number").textContent = params.get("card_number") ?? "";
 }
+function maskKeepEdges(value) {
 
+    const length = value.length;
+    if (length <= 4) {
+        return "*".repeat(length);
+    }
+    return "*".repeat(length - 4) + value.slice(-4);
+}
 window.addEventListener("DOMContentLoaded", () => {
     if (document.getElementById("preferred_name") && window.location.search) {
         displayClientData();

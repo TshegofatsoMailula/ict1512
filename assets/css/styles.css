@@ -83,17 +83,21 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
-.site-header {
+.header {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: #ffffff;
     border-bottom: 1px solid #e5e5e5;
 }
-
+.logo-placeholder{
+    width: 192px;
+    height: 60px;
+}
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
     padding: 15px 10px;
 }
@@ -102,7 +106,7 @@ button:active {
     text-decoration: none;
     color: #333;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     padding: 6px 10px;
     border-radius: 6px;
     transition: background 0.2s ease, color 0.2s ease;
