@@ -105,6 +105,11 @@
             </div>
 
             <div>
+                <label for="card_type">Credit card number</label>
+                <input type="text" id="card_number" name="card_number" class="form-input">
+            </div>
+
+            <div>
                 <label for="expiry">Expiration date</label>
                 <input type="month" id="expiry" name="expiry" class="form-input">
             </div>
@@ -143,9 +148,6 @@
 
     </form>
     </main>
-<script src="/assets/js/scripts.js"></script>
-<script src="/assets/js/validation.js"></script>
-<script>validation("client_registration")</script>
-<script>createAccount("client_registration")</script>
+<script type="module" src="/assets/js/validation.js"></script>
 </body>
 </html>
