@@ -1,0 +1,108 @@
+/* Base form layout */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+/* Grouping spacing */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Input fields */
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Focus state */
+.form-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* Hover effect */
+.form-input:hover {
+    border-color: #999;
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Legend styling */
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+    color: #222;
+}
+
+/* Radio button group styling */
+/* Make radio options stack vertically */
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+button {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.98);
+}
+/* Responsive improvement */
+@media (max-width: 640px) {
+    form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

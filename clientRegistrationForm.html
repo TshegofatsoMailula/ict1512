@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+<!-- Client Registration Form -->
+<form>
+
+<section>
+        <fieldset>
+            <legend>Client Registration</legend>
+
+            <div>
+                <label for="preferred_name">Preferred name</label>
+                <input type="text" id="preferred_name" name="preferred_name" class="form-input">
+            </div>
+
+            <div>
+                <label for="full_names">Full names (as shown on ID)</label>
+                <input type="text" id="full_names" name="full_names" class="form-input">
+            </div>
+
+            <div>
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" class="form-input">
+            </div>
+
+            <div>
+                <label for="id_number">ID number</label>
+                <input type="text" id="id_number" name="id_number" class="form-input">
+            </div>
+
+            <div>
+                <label for="phone">Cellphone number</label>
+                <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" class="form-input">
+            </div>
+
+            <div>
+                <label for="shipping">Shipping address</label>
+                <input type="text" id="shipping" name="shipping" class="form-input">
+            </div>
+
+            <div>
+                <label for="billing">Billing address</label>
+                <input type="text" id="billing" name="billing" class="form-input">
+            </div>
+
+            <fieldset>
+                <legend>Where did you hear about us?</legend>
+
+                <label>
+                    <input type="radio" name="marketing_data" value="Word of mouth">
+                    Word of mouth
+                </label>
+
+                <label>
+                    <input type="radio" name="marketing_data" value="Internet search">
+                    Internet search
+                </label>
+
+                <label>
+                    <input type="radio" name="marketing_data" value="Advertising">
+                    Advertising
+                </label>
+
+                <label>
+                    <input type="radio" name="marketing_data" value="Street advert">
+                    Saw street advert
+                </label>
+
+            </fieldset>
+
+        </fieldset>
+</section>
+
+<!-- Credit Card Form -->
+<section>
+        <fieldset>
+            <legend>Payment Details</legend>
+
+            <div>
+                <label for="card_name">Name on credit card</label>
+                <input type="text" id="card_name" name="card_name" class="form-input">
+            </div>
+
+            <div>
+                <label for="card_type">Credit card type</label>
+                <input type="text" id="card_type" name="card_type" class="form-input">
+            </div>
+
+            <div>
+                <label for="expiry">Expiration date</label>
+                <input type="month" id="expiry" name="expiry" class="form-input">
+            </div>
+
+            <div>
+                <label for="cvc">CVC number</label>
+                <input type="password" id="cvc" name="cvc" class="form-input" maxlength="4">
+            </div>
+
+        </fieldset>
+</section>
+
+<!-- Account Creation Form -->
+<section>
+        <fieldset>
+            <legend>Account Creation</legend>
+
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-input">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-input">
+            </div>
+
+            <div>
+                <label for="confirm_password">Confirm password</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="form-input">
+            </div>
+
+        </fieldset>
+        <button type="submit">Create account</button>
+        </section>
+
+    </form>
+<script src="/assets/js/scripts.js"></script>
+</body>
+</html>
