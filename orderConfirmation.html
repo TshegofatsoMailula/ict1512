@@ -8,7 +8,6 @@
                <header class="header">
             <nav class="nav">
                 <a href="index.html">Home</a>
-                <a href="orderConfirmation.html">Order</a>
                 <a href="clientRegistrationForm.html">Create account</a>
             </nav>
         </header>
@@ -19,37 +18,37 @@
             <legend>Client Registration</legend>
               <div>
                 <label for="preferred_name">Preferred name</label>
-                <input type="text" id="preferred_name" name="preferred_name" class="form-input">
+                <div class="form-input" id="preferred_name"></div>
             </div>
 
             <div>
                 <label for="full_names">Full names (as shown on ID)</label>
-                <input type="text" id="full_names" name="full_names" class="form-input">
+                <div class="form-input" id="full_names"></div>
             </div>
 
             <div>
                 <label for="surname">Surname</label>
-                <input type="text" id="surname" name="surname" class="form-input">
+                <div class="form-input" id="surname"></div>
             </div>
 
             <div>
                 <label for="id_number">ID number</label>
-                <input type="text" id="id_number" name="id_number" class="form-input">
+                <div class="form-input" id="id_number"></div>
             </div>
 
             <div>
                 <label for="phone">Cellphone number</label>
-                <input type="tel" id="phone" name="phone" class="form-input">
+                <div class="form-input" id="phone"></div>
             </div>
 
             <div>
                 <label for="email">Email address</label>
-                <input type="email" id="email" name="email" class="form-input">
+                <div class="form-input" id="email"></div>
             </div>
 
             <div>
                 <label for="shipping">Shipping address</label>
-                <input type="text" id="shipping" name="shipping" class="form-input">
+                <div class="form-input" id="shipping"></div>
             </div>
         </fieldset>
         </section>
@@ -59,29 +58,31 @@
             <legend>Payment Details</legend>
                  <div>
                 <label for="card_name">Name on credit card</label>
-                <input type="text" id="card_name" name="card_name" class="form-input">
+                <div class="form-input" id="card_name"></div>
             </div>
 
             <div>
                 <label for="card_type">Credit card type</label>
-                <input type="text" id="card_type" name="card_type" class="form-input">
+                <div class="form-input" id="card_type"></div>            
             </div>
 
             <div>
                 <label for="expiry">Expiration date</label>
-                <input type="month" id="expiry" name="expiry" class="form-input">
+                <div class="form-input" id="expiry"></div>
             </div>
 
             <div>
                 <label for="cvc">CVC number</label>
-                <input type="password" id="cvc" name="cvc" class="form-input" maxlength="4">
+                <div class="form-input" id="cvc"></div>
             </div>
                     </fieldset>
-            <button type="submit" id="submitButton">Complete order</button>
+            <button type="submit" id="submitButton">Continue shopping</button>
             </form>
         </section>
         </main>
+        <script src="/assets/js/scripts.js"></script>
         <script src="/assets/js/validation.js"></script>
         <script>validation("order_confirmation")</script>
+        <script>displayClientData()</script>
     </body>
 </html>
