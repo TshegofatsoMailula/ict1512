@@ -7,9 +7,16 @@
 </head>
 
 <body>
-
+    <main>
+   <header class="header">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="orderConfirmation.html">Order</a>
+                <a href="clientRegistrationForm.html">Create account</a>
+            </nav>
+        </header>
 <!-- Client Registration Form -->
-<form>
+<form id="client_registration">
 
 <section>
         <fieldset>
@@ -132,10 +139,12 @@
             </div>
 
         </fieldset>
-        <button type="submit">Create account</button>
+        <button type="submit" id="submitButton">Create account</button>
         </section>
 
     </form>
-<script src="/assets/js/scripts.js"></script>
+    </main>
+<script src="/assets/js/validation.js"></script>
+<script>validation("client_registration")</script>
 </body>
 </html>

@@ -4,8 +4,19 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
     <body>
+        <main>
+               <header class="header">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="orderConfirmation.html">Order</a>
+                <a href="clientRegistrationForm.html">Create account</a>
+            </nav>
+        </header>
               <!--Client registration form-->
-            <form>
+            <form id="order_confirmation">
+            <section>
+                  <fieldset>
+            <legend>Client Registration</legend>
               <div>
                 <label for="preferred_name">Preferred name</label>
                 <input type="text" id="preferred_name" name="preferred_name" class="form-input">
@@ -40,11 +51,12 @@
                 <label for="shipping">Shipping address</label>
                 <input type="text" id="shipping" name="shipping" class="form-input">
             </div>
-            </form>
+        </fieldset>
         </section>
             <!--Credit card form-->
         <section>
-        <form>
+            <fieldset>
+            <legend>Payment Details</legend>
                  <div>
                 <label for="card_name">Name on credit card</label>
                 <input type="text" id="card_name" name="card_name" class="form-input">
@@ -64,9 +76,12 @@
                 <label for="cvc">CVC number</label>
                 <input type="password" id="cvc" name="cvc" class="form-input" maxlength="4">
             </div>
-
+                    </fieldset>
+            <button type="submit" id="submitButton">Complete order</button>
             </form>
         </section>
-        <script src="/assets/js/scripts.js"></script>
+        </main>
+        <script src="/assets/js/validation.js"></script>
+        <script>validation("order_confirmation")</script>
     </body>
 </html>

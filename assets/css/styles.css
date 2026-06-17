@@ -1,4 +1,3 @@
-/* Base form layout */
 form {
     max-width: 600px;
     margin: 20px auto;
@@ -10,12 +9,10 @@ form {
     font-family: Arial, sans-serif;
 }
 
-/* Grouping spacing */
 form div {
     margin-bottom: 15px;
 }
 
-/* Labels */
 form label {
     display: block;
     margin-bottom: 6px;
@@ -24,7 +21,6 @@ form label {
     font-size: 14px;
 }
 
-/* Input fields */
 .form-input {
     width: 100%;
     padding: 10px 12px;
@@ -36,18 +32,15 @@ form label {
     box-sizing: border-box;
 }
 
-/* Focus state */
 .form-input:focus {
     border-color: #4a90e2;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
 }
 
-/* Hover effect */
 .form-input:hover {
     border-color: #999;
 }
 
-/* Fieldsets */
 fieldset {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -55,15 +48,13 @@ fieldset {
     margin-bottom: 20px;
 }
 
-/* Legend styling */
 legend {
     font-weight: bold;
     padding: 0 8px;
     color: #222;
 }
 
-/* Radio button group styling */
-/* Make radio options stack vertically */
+
 fieldset label {
     display: flex;
     align-items: center;
@@ -85,17 +76,43 @@ button {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Hover effect */
 button:hover {
     background-color: #357ab8;
 }
 
-/* Click effect */
 button:active {
     transform: scale(0.98);
 }
-/* Responsive improvement */
-@media (max-width: 640px) {
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+    background: #4a90e2;
+    color: white;
+}
+@media screen and (max-width: 1439px) {
     form {
         margin: 10px;
         padding: 15px;
